@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 import { socials } from "@/content/socials";
 import { Container } from "../layout/container";
 
@@ -5,58 +7,170 @@ export function Contact() {
   return (
     <section
       id="contact"
-      className="border-t border-zinc-200 py-24"
+      className="relative py-32"
     >
       <Container>
-        <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-medium text-zinc-500">
-            CONTATO
-          </span>
+        <div
+          className="
+            relative
+            overflow-hidden
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight">
-            Vamos trabalhar juntos
-          </h2>
+            rounded-[40px]
 
-          <p className="mt-6 text-zinc-600">
-            Estou disponível para oportunidades
-            como Desenvolvedor Front-End e projetos
-            freelancer.
-          </p>
+            border
+            border-white/10
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a
-              href={socials.github}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border px-6 py-3"
+            bg-[#101010]
+
+            px-8
+            py-20
+
+            md:px-16
+          "
+        >
+          {/* Glow */}
+          <div
+            className="
+              absolute
+              right-0
+              top-0
+
+              h-[400px]
+              w-[400px]
+
+              rounded-full
+
+              bg-red-500/10
+
+              blur-[150px]
+            "
+          />
+
+          <div className="relative z-10">
+            <span
+              className="
+                text-sm
+                font-semibold
+                uppercase
+                tracking-[0.3em]
+
+                text-red-500
+              "
             >
-              GitHub
-            </a>
+              Contact
+            </span>
 
-            <a
-              href={socials.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full border px-6 py-3"
-            >
-              LinkedIn
-            </a>
+            <h2
+              className="
+                mt-6
 
-            <a
-              href={socials.email}
-              className="rounded-full border px-6 py-3"
-            >
-              E-mail
-            </a>
+                max-w-4xl
 
-            <a
-              href={socials.whatsapp}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full bg-zinc-900 px-6 py-3 text-white"
+                text-5xl
+                font-black
+
+                leading-tight
+
+                text-white
+
+                md:text-7xl
+              "
             >
-              WhatsApp
-            </a>
+              Tem um projeto
+              <br />
+              em mente?
+            </h2>
+
+            <p
+              className="
+                mt-8
+
+                max-w-2xl
+
+                text-lg
+
+                leading-relaxed
+
+                text-zinc-400
+              "
+            >
+              Estou disponível para oportunidades
+              como Front-End Developer e também para
+              projetos freelancer utilizando React,
+              Next.js e TypeScript.
+            </p>
+
+            <div
+              className="
+                mt-12
+
+                flex
+                flex-wrap
+
+                gap-4
+              "
+            >
+              <a
+                href={socials.whatsapp}
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+
+                  rounded-full
+
+                  bg-red-500
+
+                  px-8
+                  py-4
+
+                  font-semibold
+
+                  text-white
+
+                  transition-all
+
+                  hover:bg-red-600
+                "
+              >
+                WhatsApp
+
+                <ArrowUpRight size={18} />
+              </a>
+
+              <a
+                href={socials.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+
+                  rounded-full
+
+                  border
+                  border-white/10
+
+                  px-8
+                  py-4
+
+                  font-semibold
+
+                  text-white
+
+                  transition-all
+
+                  hover:border-red-500
+                "
+              >
+                LinkedIn
+
+                <ArrowUpRight size={18} />
+              </a>
+            </div>
           </div>
         </div>
       </Container>

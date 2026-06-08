@@ -7,69 +7,196 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="border-t border-zinc-200 py-24"
+      className="relative py-32"
     >
       <Container>
-        <div className="mb-16">
-          <span className="text-sm font-medium text-zinc-500">
-            PROJETOS
+        <div className="mb-20">
+          <span
+            className="
+              text-sm
+              font-semibold
+              uppercase
+              tracking-[0.3em]
+              text-red-500
+            "
+          >
+            Projetos
           </span>
 
-          <h2 className="mt-4 text-4xl font-bold tracking-tight">
-            Projetos em destaque
+          <h2
+            className="
+              mt-4
+              text-4xl
+              font-black
+              text-white
+              md:text-5xl
+            "
+          >
+            Trabalhos Recentes
           </h2>
 
-          <p className="mt-4 max-w-2xl text-zinc-600">
-            Alguns projetos desenvolvidos utilizando
-            React, Next.js, TypeScript e outras
-            tecnologias modernas.
+          <p
+            className="
+              mt-4
+              max-w-2xl
+              text-zinc-400
+            "
+          >
+            Alguns dos projetos que desenvolvi
+            utilizando React, Next.js, TypeScript e
+            outras tecnologias modernas.
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
-          {projects.map((project) => (
+        <div
+          className="
+            grid
+            gap-6
+            md:grid-cols-2
+            xl:grid-cols-3
+          "
+        >
+          {projects.map((project, index) => (
             <article
               key={project.title}
-              className="overflow-hidden rounded-3xl border border-zinc-200"
+              className="
+                group
+                overflow-hidden
+                rounded-[32px]
+                border
+                border-white/10
+                bg-[#101010]
+                transition-all
+                duration-500
+
+                hover:-translate-y-2
+                hover:border-red-500/40
+                hover:shadow-[0_0_40px_rgba(239,68,68,.15)]
+              "
             >
-              <div className="relative aspect-video">
+              <div className="relative aspect-video overflow-hidden">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover"
+                  className="
+                    object-cover
+                    transition-transform
+                    duration-700
+                    group-hover:scale-105
+                  "
                 />
+
+                <div
+                  className="
+                    absolute
+                    left-4
+                    top-4
+
+                    flex
+                    h-10
+                    w-10
+                    items-center
+                    justify-center
+
+                    rounded-full
+
+                    border
+                    border-white/10
+
+                    bg-black/70
+
+                    text-sm
+                    font-bold
+                    text-white
+
+                    backdrop-blur-md
+                  "
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </div>
               </div>
 
               <div className="p-6">
-                <h3 className="text-2xl font-semibold">
+                <h3
+                  className="
+                    text-2xl
+                    font-bold
+                    text-white
+                  "
+                >
                   {project.title}
                 </h3>
 
-                <p className="mt-4 text-zinc-600">
+                <p
+                  className="
+                    mt-4
+                    line-clamp-3
+                    text-sm
+                    leading-relaxed
+                    text-zinc-400
+                  "
+                >
                   {project.description}
                 </p>
 
-                <div className="mt-6 flex flex-wrap gap-2">
+                <div
+                  className="
+                    mt-6
+                    flex
+                    flex-wrap
+                    gap-2
+                  "
+                >
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="rounded-full border px-3 py-1 text-sm"
+                      className="
+                        rounded-full
+
+                        border
+                        border-red-500/20
+
+                        bg-red-500/10
+
+                        px-3
+                        py-1
+
+                        text-xs
+                        font-medium
+
+                        text-red-400
+                      "
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
 
-                <div className="mt-8 flex gap-4">
+                <div
+                  className="
+                    mt-8
+                    flex
+                    items-center
+                    gap-5
+                  "
+                >
                   {project.demo && (
                     <a
                       href={project.demo}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-full bg-zinc-900 px-5 py-2 text-white"
+                      className="
+                        text-sm
+                        font-semibold
+                        text-red-400
+
+                        transition-colors
+
+                        hover:text-red-300
+                      "
                     >
-                      Demo
+                      Demo →
                     </a>
                   )}
 
@@ -78,9 +205,17 @@ export function Projects() {
                       href={project.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="rounded-full border px-5 py-2"
+                      className="
+                        text-sm
+                        font-semibold
+                        text-zinc-300
+
+                        transition-colors
+
+                        hover:text-white
+                      "
                     >
-                      GitHub
+                      GitHub →
                     </a>
                   )}
                 </div>
