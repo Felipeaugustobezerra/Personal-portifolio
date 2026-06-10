@@ -1,26 +1,31 @@
 export const navigation = [
   {
-    label: "Sobre",
-    href: "#about",
+    label: "Skills",
+    href: "#skills",
+    id: "skills",
   },
 
   {
-    label: "Projetos",
+    label: "Projects",
     href: "#projects",
+    id: "projects",
   },
 
   {
-    label: "Experiência",
+    label: "Experience",
     href: "#experience",
+    id: "experience",
   },
 
   {
-    label: "Blog",
-    href: "#blog",
+    label: "Roadmap",
+    href: "#roadmap",
+    id: "roadmap",
   },
 
   {
-    label: "Contato",
+    label: "Contact",
     href: "#contact",
+    id: "contact",
   },
 ];

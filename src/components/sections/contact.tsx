@@ -1,7 +1,8 @@
 import { ArrowUpRight } from "lucide-react";
 
-import { socials } from "@/content/socials";
+
 import { Container } from "../layout/container";
+import { socials } from "@/app/types/socials";
 
 export function Contact() {
   return (

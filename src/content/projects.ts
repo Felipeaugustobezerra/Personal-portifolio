@@ -1,25 +1,6 @@
 import { Projects } from "@/app/types/projects";
 
 export const projects: Projects[] = [
-  {
-    title: "Uaifit",
-
-    description:
-      "E-commerce fitness com catálogo de produtos, carrinho de compras, checkout e painel administrativo.",
-
-    technologies: [
-      "React",
-      "Node.js",
-      "Stripe",
-      "TypeScript",
-    ],
-
-    image: "/projects/uaifit.webp",
-
-    github: "",
-
-    demo: "",
-  },
 
   {
     title: "Thiago Ribeiro",
@@ -38,7 +19,7 @@ export const projects: Projects[] = [
 
     github: "",
 
-    demo: "",
+    demo: "https://nutrithiagoribeiro.com/",
   },
 
   {
@@ -76,6 +57,6 @@ export const projects: Projects[] = [
 
     github: "",
 
-    demo: "",
+    demo: "https://www.mediabraza.com/",
   },
 ];

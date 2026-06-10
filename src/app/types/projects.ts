@@ -1,4 +1,4 @@
-export interface Project {
+export interface Projects {
   title: string;
   description: string;
   technologies: string[];

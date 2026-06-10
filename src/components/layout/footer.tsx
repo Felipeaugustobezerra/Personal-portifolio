@@ -1,6 +1,6 @@
 
-import { FaInstagram,FaGithubSquare ,FaLinkedin} from "react-icons/fa";
-import { socials } from "@/content/socials";
+import {FaGithubSquare ,FaLinkedin} from "react-icons/fa";
+import { socials } from "@/app/types/socials";
 import { Container } from "./container";
 
 export function Footer() {

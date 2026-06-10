@@ -160,10 +160,10 @@ export function Hero() {
               "
             >
               <Image
-                src="/profile/felipe.webp"
+                src="/images/Hero.png"
                 alt="Felipe Augusto"
-                width={550}
-                height={700}
+                width={400}
+                height={300}
                 priority
                 className="object-cover"
               />

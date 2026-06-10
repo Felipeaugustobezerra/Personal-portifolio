@@ -62,7 +62,7 @@ export function Projects() {
               className="
                 group
                 overflow-hidden
-                rounded-[32px]
+                rounded-4xl
                 border
                 border-white/10
                 bg-[#101010]
