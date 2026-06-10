@@ -1,0 +1,12 @@
+{
+  "name": "Felipe Augusto",
+  "short_name": "Felipe",
+
+  "start_url": "/",
+
+  "display": "standalone",
+
+  "background_color": "#050505",
+
+  "theme_color": "#ef4444"
+}

@@ -1,5 +1,6 @@
 import { roadmap } from "@/content/roadmap";
 import { Container } from "../layout/container";
+import { Reveal } from '../ui/reveal';
 
 export function Roadmap() {
   return (
@@ -99,7 +100,9 @@ export function Roadmap() {
                   text-white
                 "
               >
-                {item.title}
+                <Reveal key={item.title}>
+                  {item.title}
+                </Reveal>
               </h3>
 
               <p
@@ -109,7 +112,9 @@ export function Roadmap() {
                   text-zinc-400
                 "
               >
-                {item.description}
+                <Reveal key={item.description}>
+                  {item.description}
+                </Reveal>
               </p>
             </article>
           ))}

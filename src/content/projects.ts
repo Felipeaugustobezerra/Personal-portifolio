@@ -1,6 +1,6 @@
-import { Projects } from "@/app/types/projects";
+import { Project } from "@/app/types/projects";
 
-export const projects: Projects[] = [
+export const projects: Project[] = [
 
   {
     title: "Thiago Ribeiro",

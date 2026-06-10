@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { projects } from "@/content/projects";
 import { Container } from "../layout/container";
+import { Reveal } from '../ui/reveal';
 
 export function Projects() {
   return (
@@ -57,6 +58,7 @@ export function Projects() {
           "
         >
           {projects.map((project, index) => (
+            <Reveal key={project.title}>
             <article
               key={project.title}
               className="
@@ -148,7 +150,7 @@ export function Projects() {
                     gap-2
                   "
                 >
-                  {project.technologies.map((tech) => (
+                  {project.technologies.map((tech: string) => (
                     <span
                       key={tech}
                       className="
@@ -221,6 +223,7 @@ export function Projects() {
                 </div>
               </div>
             </article>
+            </Reveal>
           ))}
         </div>
       </Container>

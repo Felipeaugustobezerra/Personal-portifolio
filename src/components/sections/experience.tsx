@@ -1,5 +1,6 @@
 import { experience } from "@/content/experience";
 import { Container } from "../layout/container";
+import { Reveal } from '../ui/reveal';
 
 export function Experience() {
   return (
@@ -95,7 +96,9 @@ export function Experience() {
                     text-red-500
                   "
                 >
-                  {item.year}
+                  <Reveal key={item.year}>
+                    {item.year}
+                  </Reveal>
                 </span>
 
                 <h3
@@ -106,7 +109,9 @@ export function Experience() {
                     text-white
                   "
                 >
-                  {item.title}
+                  <Reveal key={item.year}>
+                    {item.title}
+                  </Reveal>
                 </h3>
 
                 <p
