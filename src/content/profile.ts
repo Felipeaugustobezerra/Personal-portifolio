@@ -28,7 +28,7 @@ Atualmente estou aprofundando meus conhecimentos em arquitetura de software, SEO
     },
     {
       label: "País",
-      value: "🇵🇹",
+      value: "🇵🇹🇧🇷",
     },
   ],
 };

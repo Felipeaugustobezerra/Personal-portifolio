@@ -189,7 +189,15 @@ export function Projects() {
                       target="_blank"
                       rel="noreferrer"
                       className="
-                        text-sm
+                        text-lg
+                        py-1
+                        px-3
+                        rounded-lg
+
+                        border
+                        border-red-500/20
+
+                        bg-red-500/10
                         font-semibold
                         text-red-400
 
@@ -198,7 +206,7 @@ export function Projects() {
                         hover:text-red-300
                       "
                     >
-                      Demo →
+                      Ver Projeto 
                     </a>
                   )}
 

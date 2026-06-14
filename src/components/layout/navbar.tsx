@@ -116,7 +116,7 @@ export function Navbar() {
           </nav>
 
           {/* Currículo */}
-          <a
+          {/* <a
             href="/curriculo.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -144,7 +144,7 @@ export function Navbar() {
             "
           >
             Currículo
-          </a>
+          </a> */}
 
           {/* Mobile Button */}
           <button
@@ -185,7 +185,7 @@ export function Navbar() {
             bg-black
           "
         >
-          <Container>
+          {/* <Container>
             <nav
               className="
                 flex
@@ -240,7 +240,7 @@ export function Navbar() {
                 Baixar Currículo
               </a>
             </nav>
-          </Container>
+          </Container> */}
         </motion.div>
       )}
     </header>

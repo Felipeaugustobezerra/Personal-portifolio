@@ -46,13 +46,14 @@ export function Skills() {
           </p>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid gap-6 lg:grid-cols-2 ">
           {skills.map((skill) => (
             <Reveal key={skill.title}>
             <div
               key={skill.title}
               className="
                 group
+                min-h-[250px]
                 rounded-4xl
                 border
                 border-white/10
