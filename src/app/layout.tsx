@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 
 import "./globals.css";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { CursorGlow } from '@/components/ui/cursor-glow';
 import { BackToTop } from "@/components/ui/back-to-top";
 import { PersonSchema } from '@/components/seo/person-schema';
@@ -170,6 +171,7 @@ export default function RootLayout({
     <PersonSchema />
   {children}
   <BackToTop />
+  <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
 </body>
     </html>
   );
