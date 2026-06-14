@@ -1,8 +1,10 @@
+"use client";
 import { ArrowUpRight } from "lucide-react";
 
 
 import { Container } from "../layout/container";
 import { socials } from "@/app/types/socials";
+import { trackEvent } from '@/app/lib/gtm';
 
 export function Contact() {
   return (
@@ -15,9 +17,7 @@ export function Contact() {
           className="
             relative
             overflow-hidden
-
             rounded-[40px]
-
             border
             border-white/10
 
@@ -36,8 +36,8 @@ export function Contact() {
               right-0
               top-0
 
-              h-[400px]
-              w-[400px]
+              h-100
+              w-100
 
               rounded-full
 
@@ -115,6 +115,8 @@ export function Contact() {
                 href={socials.whatsapp}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() =>
+                trackEvent("click_whatsapp")}
                 className="
                   inline-flex
                   items-center
@@ -145,6 +147,8 @@ export function Contact() {
                 href={socials.linkedin}
                 target="_blank"
                 rel="noreferrer"
+                onClick={() =>
+                trackEvent("click_linkedin")}
                 className="
                   inline-flex
                   items-center

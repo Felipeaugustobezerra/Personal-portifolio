@@ -157,8 +157,8 @@ export default function RootLayout({
         bottom-0
         left-0
 
-        h-[500px]
-        w-[500px]
+        h-125
+        w-125
 
         rounded-full
 
@@ -173,7 +173,7 @@ export default function RootLayout({
   {children}
   <BackToTop />
 
-  <noscript dangerouslySetInnerHTML={{__html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P845J9B8" height="0" width="0" style="display:none;visibility:hidden"></iframe>`}} />
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2DXNKR3" height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
   
 </body>
     </html>
