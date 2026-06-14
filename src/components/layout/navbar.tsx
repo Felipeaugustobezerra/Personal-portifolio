@@ -15,6 +15,8 @@ import { navigation } from "@/app/types/navigation";
 import { useActiveSection } from "@/hooks/use-active-section";
 
 import { Container } from "./container";
+import { clsx } from 'clsx';
+import { trackEvent } from '@/app/lib/gtm';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,21 +25,9 @@ export function Navbar() {
 
   return (
     <header
-      className="
-        sticky
-        top-0
-        z-50
-
-        border-b
-        border-white/10
-
-        bg-black/70
-
-        backdrop-blur-xl
-      "
-    >
+      className={clsx("sticky top-0 z-50 border-b border-white/10 bg-black/70 backdrop-blur-xl")}>
       <Container>
-        <div className="flex h-20 items-center justify-between">
+        <div className={clsx("flex h-20 items-center justify-between")}>
           {/* Logo */}
           <Link
             href="/"
@@ -49,11 +39,7 @@ export function Navbar() {
             />
 
             <span
-              className="
-                text-xl
-                font-bold
-                text-white
-              "
+              className={clsx("text-xl font-bold text-white")}
             >
               Felipe Augusto
             </span>
@@ -61,13 +47,7 @@ export function Navbar() {
 
           {/* Desktop */}
           <nav
-            className="
-              hidden
-              items-center
-              gap-8
-
-              md:flex
-            "
+            className={clsx("hidden items-center gap-8 md:flex")}
           >
             {navigation.map((item) => (
               <a
@@ -116,7 +96,7 @@ export function Navbar() {
           </nav>
 
           {/* Currículo */}
-          {/* <a
+           {/* <a
             href="/curriculo.pdf"
             target="_blank"
             rel="noopener noreferrer"
@@ -146,7 +126,7 @@ export function Navbar() {
             "
           >
             Currículo
-          </a> */}
+          </a>  */}
 
           {/* Mobile Button */}
           <button
@@ -187,7 +167,7 @@ export function Navbar() {
             bg-black
           "
         >
-          {/* <Container>
+          <Container>
             <nav
               className="
                 flex
@@ -219,7 +199,7 @@ export function Navbar() {
                 </a>
               ))}
 
-              <a
+              {/* <a
                 href="/curriculo.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -240,9 +220,9 @@ export function Navbar() {
                 "
               >
                 Baixar Currículo
-              </a>
+              </a> */}
             </nav>
-          </Container> */}
+          </Container>
         </motion.div>
       )}
     </header>

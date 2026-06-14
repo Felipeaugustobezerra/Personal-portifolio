@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 
 import { projects } from "@/content/projects";
 import { Container } from "../layout/container";
 import { Reveal } from '../ui/reveal';
+import { trackEvent } from '@/app/lib/gtm';
+import { clsx } from 'clsx';
 
 export function Projects() {
   return (
@@ -13,26 +16,11 @@ export function Projects() {
       <Container>
         <div className="mb-20">
           <span
-            className="
-              text-sm
-              font-semibold
-              uppercase
-              tracking-[0.3em]
-              text-red-500
-            "
-          >
+            className={clsx("text-sm font-semibold uppercase tracking-[0.3em] text-red-500" )}>
             Projetos
           </span>
-
-          <h2
-            className="
-              mt-4
-              text-4xl
-              font-black
-              text-white
-              md:text-5xl
-            "
-          >
+           <h2
+            className={clsx("mt-4 text-4xl font-black text-white md:text-5xl ")}>
             Trabalhos Recentes
           </h2>
 
@@ -188,24 +176,9 @@ export function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noreferrer"
-                      className="
-                        text-lg
-                        py-1
-                        px-3
-                        rounded-lg
-
-                        border
-                        border-red-500/20
-
-                        bg-red-500/10
-                        font-semibold
-                        text-red-400
-
-                        transition-colors
-
-                        hover:text-red-300
-                      "
-                    >
+                      onClick={() =>
+                      trackEvent("view_project", {project: project.title,})}
+                      className={clsx(" text-lg py-1 px-3 rounded-lg border border-red-500/20", "bg-red-500/10 font-semibold text-red-400" , "transition-colors hover:text-red-300")}>
                       Ver Projeto 
                     </a>
                   )}
