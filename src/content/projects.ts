@@ -13,7 +13,7 @@ export const projects: Project[] = [
       "CSS",
     ],
 
-    image: "/images/MediaBraza.jpg",
+    image: "/images/MediaBraza.webp",
 
     github: "",
 
@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "CSS",
     ],
 
-    image: "/images/Advdaniela.jpg",
+    image: "/images/Advdaniela.webp",
 
     github: "",
 
@@ -51,7 +51,7 @@ export const projects: Project[] = [
       "SEO",
     ],
 
-    image: "/images/Nutrithiago.jpg",
+    image: "/images/Nutrithiago.webp",
 
     github: "",
 

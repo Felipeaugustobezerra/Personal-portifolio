@@ -20,8 +20,8 @@ export function Hero() {
           absolute
           right-0
           top-0
-          h-[300px]
-          w-[300px]
+          h-75
+          w-75
           rounded-full
           bg-red-500/10
           blur-[80px]
@@ -56,12 +56,12 @@ export function Hero() {
             <h1
               className="
                 mt-8
-                text-6xl
                 font-black
                 leading-none
-                sm:text-7xl
-                lg:text-8xl
-                xl:text-9xl
+                text-5xl
+                sm:text-6xl
+                lg:text-7xl
+                xl:text-8xl
               "
             >
               <span className="block text-white">
