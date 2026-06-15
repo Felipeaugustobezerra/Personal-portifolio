@@ -31,7 +31,6 @@ export function Hero() {
       <Container>
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* Conteúdo */}
-          <Reveal>
           <div className="relative z-10">
             <div
               className="
@@ -149,7 +148,6 @@ export function Hero() {
               ))}
             </div>
           </div>
-          </Reveal>
 
           {/* Foto */}
           <div className="relative flex justify-center lg:justify-end">
