@@ -20,11 +20,11 @@ export function Hero() {
           absolute
           right-0
           top-0
-          h-[600px]
-          w-[600px]
+          h-[300px]
+          w-[300px]
           rounded-full
           bg-red-500/10
-          blur-[180px]
+          blur-[80px]
         "
       />
 
