@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 
 import "./globals.css";
-// import { CursorGlow } from '@/components/ui/cursor-glow';
+import { CursorGlow } from '@/components/ui/cursor-glow';
 import Script from "next/script";
 import { BackToTop } from "@/components/ui/back-to-top";
 import { PersonSchema } from '@/components/seo/person-schema';
@@ -168,7 +168,7 @@ export default function RootLayout({
       "
     />
   </div>
-    {/* <CursorGlow /> */}
+    <CursorGlow />
     <PersonSchema />
   {children}
   <BackToTop />
