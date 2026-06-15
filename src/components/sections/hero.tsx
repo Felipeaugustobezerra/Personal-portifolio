@@ -164,7 +164,7 @@ export function Hero() {
               "
             >
               <Image
-                src="/images/Hero.png"
+                src="/images/Hero.jpg"
                 alt="Felipe Augusto"
                 width={400}
                 height={300}
