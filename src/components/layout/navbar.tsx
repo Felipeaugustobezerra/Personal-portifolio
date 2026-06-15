@@ -16,7 +16,7 @@ import { useActiveSection } from "@/hooks/use-active-section";
 
 import { Container } from "./container";
 import { clsx } from 'clsx';
-import { trackEvent } from '@/app/lib/gtm';
+// import { trackEvent } from '@/app/lib/gtm';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
