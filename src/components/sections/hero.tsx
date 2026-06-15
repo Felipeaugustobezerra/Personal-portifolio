@@ -164,11 +164,13 @@ export function Hero() {
               "
             >
               <Image
-                src="/images/Hero.jpg"
+                src="/images/Hero.webp"
                 alt="Felipe Augusto"
                 width={400}
                 height={300}
                 priority
+                quality={75}
+                sizes="(max-width:768px) 90vw, 400px"
                 className="object-cover"
               />
 

@@ -131,11 +131,8 @@ export function Navbar() {
           {/* Mobile Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="
-              text-white
-
-              md:hidden
-            "
+            className={clsx("text-white md:hidden")}
+            aria-label={isOpen ? 'Fechar menu' : 'Abrir menu'}
           >
             {isOpen ? (
               <X size={28} />

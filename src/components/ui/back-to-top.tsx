@@ -53,6 +53,7 @@ export function BackToTop() {
             duration: 0.2,
           }}
           onClick={scrollToTop}
+          aria-label='Voltar ao topo'
           className="
             fixed
             bottom-8
@@ -83,7 +84,7 @@ export function BackToTop() {
             hover:text-white
           "
         >
-          <ArrowUp size={20} />
+          <ArrowUp   size={20} />
         </motion.button>
       )}
     </AnimatePresence>
