@@ -29,6 +29,7 @@ export function Footer() {
               href={socials.github}
               target="_blank"
               rel="noreferrer"
+              aria-label='Ver GitHub'
               className={clsx("text-zinc-500 transition-colors hover:text-red-500")}>
               <FaGithubSquare size={22} />
             </a> 
@@ -37,6 +38,7 @@ export function Footer() {
               href={socials.linkedin}
               target="_blank"
               rel="noreferrer"
+              aria-label='Ver LinkedIn'
               className={clsx("text-zinc-500 transition-colors hover:text-red-500")}
             >
               <FaLinkedin size={22} />

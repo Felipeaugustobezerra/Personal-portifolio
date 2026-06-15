@@ -115,6 +115,7 @@ export function Contact() {
                 href={socials.whatsapp}
                 target="_blank"
                 rel="noreferrer"
+                aria-label='Entrar em contato via WhatsApp'
                 onClick={() =>
                 trackEvent("click_whatsapp")}
                 className="

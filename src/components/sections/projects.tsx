@@ -68,6 +68,7 @@ export function Projects() {
                 <Image
                   src={project.image}
                   alt={project.title}
+                  aria-label={project.title}
                   fill
                   className="
                     object-cover
@@ -175,6 +176,7 @@ export function Projects() {
                     <a
                       href={project.demo}
                       target="_blank"
+                      aria-label='Ver Projeto'
                       rel="noreferrer"
                       onClick={() =>
                       trackEvent("view_project", {project: project.title,})}
@@ -187,6 +189,9 @@ export function Projects() {
                     <a
                       href={project.github}
                       target="_blank"
+                      aria-label='Ver Código no GitHub'
+                        onClick={() =>
+                        trackEvent("view_github", {project: project.title,})}
                       rel="noreferrer"
                       className="
                         text-sm
