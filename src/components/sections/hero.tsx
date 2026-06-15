@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { profile } from "@/content/profile";
 import { Container } from "../layout/container";
-import { Reveal } from "@/components/ui/reveal";
+// import { Reveal } from "@/components/ui/reveal";
 
 export function Hero() {
   return (
