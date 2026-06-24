@@ -173,7 +173,7 @@ export default function RootLayout({
   {children}
   <BackToTop />
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2DXNKR3" height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P845J9B8" height="0" width="0" style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
   
 </body>
     </html>
