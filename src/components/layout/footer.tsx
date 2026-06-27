@@ -1,3 +1,4 @@
+"use client";
 
 import {FaGithubSquare ,FaLinkedin} from "react-icons/fa";
 import { socials } from "@/app/types/socials";
