@@ -3,6 +3,7 @@ import {FaGithubSquare ,FaLinkedin} from "react-icons/fa";
 import { socials } from "@/app/types/socials";
 import { Container } from "./container";
 import clsx from "clsx";
+import { trackEvent } from '@/app/lib/gtm';
 
 export function Footer() {
   return (
@@ -30,6 +31,7 @@ export function Footer() {
               target="_blank"
               rel="noreferrer"
               aria-label='Ver GitHub'
+              onClick={() => trackEvent("click_footer_github")}
               className={clsx("text-zinc-500 transition-colors hover:text-red-500")}>
               <FaGithubSquare size={22} />
             </a> 
@@ -39,6 +41,7 @@ export function Footer() {
               target="_blank"
               rel="noreferrer"
               aria-label='Ver LinkedIn'
+              onClick={() => trackEvent("click_footer_linkedin")}
               className={clsx("text-zinc-500 transition-colors hover:text-red-500")}
             >
               <FaLinkedin size={22} />

@@ -178,8 +178,7 @@ export function Projects() {
                       target="_blank"
                       aria-label='Ver Projeto'
                       rel="noreferrer"
-                      onClick={() =>
-                      trackEvent("view_project", {project: project.title,})}
+                      onClick={() => trackEvent("view_project", {project: project.title,})}
                       className={clsx(" text-lg py-1 px-3 rounded-lg border border-red-500/20", "bg-red-500/10 font-semibold text-red-400" , "transition-colors hover:text-red-300")}>
                       Ver Projeto 
                     </a>
@@ -190,8 +189,7 @@ export function Projects() {
                       href={project.github}
                       target="_blank"
                       aria-label='Ver Código no GitHub'
-                        onClick={() =>
-                        trackEvent("view_github", {project: project.title,})}
+                      onClick={() => trackEvent("view_github", {project: project.title,})}
                       rel="noreferrer"
                       className="
                         text-sm

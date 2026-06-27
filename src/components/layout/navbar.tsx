@@ -100,8 +100,7 @@ export function Navbar() {
             href="/curriculo.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() =>
-            trackEvent("download_cv")}
+            onClick={() => trackEvent("click_download_resume")}
             className="
               hidden
 

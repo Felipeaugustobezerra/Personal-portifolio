@@ -116,8 +116,7 @@ export function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label='Entrar em contato via WhatsApp'
-                onClick={() =>
-                trackEvent("click_whatsapp")}
+                onClick={() => trackEvent("click_whatsapp")}
                 className="
                   inline-flex
                   items-center
@@ -148,8 +147,8 @@ export function Contact() {
                 href={socials.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                onClick={() =>
-                trackEvent("click_linkedin")}
+                onClick={() => trackEvent("click_linkedin")}
+                aria-label='Entrar em contato via LinkedIn'
                 className="
                   inline-flex
                   items-center
